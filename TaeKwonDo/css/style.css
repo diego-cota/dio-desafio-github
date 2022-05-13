@@ -1,0 +1,485 @@
+*{
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+
+ /*classes auxiiares*/
+ .clear{clear: both;}
+ header div.container_header{max-width: 1280px;padding: 0 1%; margin: 0 auto;}
+
+
+
+
+div.logo{
+	float: left;
+	width: 100px;
+	height: 70px;
+	background-image: url('../imagem/map.jpg');
+	background-size: 100% 100%;
+	margin: 1%;
+}
+div.logo2{
+	float: right;
+	width: 100px;
+	height: 70px;
+	background-image: url('../imagem/ftkdam.png');
+	background-size: 100% 100%;
+	margin: 1%;
+
+}
+header nav{
+	text-align: center;
+
+}
+header nav ul{
+	list-style-type: none;
+
+}
+header li{
+	margin: 40px 3%;
+	padding: 0 15px;
+	display: inline-block;
+}
+header li > a{
+	color: black;
+	text-decoration: none;
+}
+
+
+/*Associação MAP*/
+
+div.noticias_map{
+	background-color: whitesmoke;
+	background-size: 100% 100%;
+	height: 650px;
+	border-top: 3px solid rgba(178,34,34);
+	padding-bottom: 20px;
+}
+
+/*Eventos*/
+
+div.noticias_eventos{
+	background-image: url('../imagem/tkd.jpg');
+	background-size: 100% 100%;
+	height: 655px;
+	border-top: 3px solid rgba(178,34,34);
+	padding-bottom: 20px;
+}
+
+div.noticias_eventos div.imagem{
+	margin-left: 45%;
+}
+
+.slider{
+	position: relative;
+	width: 100%;
+	max-width: 1200px;
+	height: 700px;
+	max-height: 700px;
+	/*background-color:#ccc;*/
+	margin: 0 auto;
+}
+
+.slider img{
+	display: none;
+	left: 50%;
+	top: 45%;
+	bottom: 10%;
+	transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	position: absolute;
+	max-width: 80%;
+	max-height: 80%;
+}
+
+.bullets-nav{
+	position: absolute;
+	left: 50%;
+	bottom: 50px;
+	width: 100%;
+	z-index: 3;
+	text-align: center;
+	transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
+}
+
+.bullets-nav span{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	border-radius: 8px;
+	background-color: #ccc;
+	cursor: pointer;
+	margin:0 30px;
+}
+
+/*Galeria*/
+
+div.noticias_galeria{
+	background-color: whitesmoke;
+	background-size: 100% 100%;
+	height: 650px;
+	border-top: 3px solid rgba(178,34,34);
+	padding-bottom: 20px;
+}
+
+/* Gamma Gallery Style */
+
+.gamma-container {
+	min-height: 200px;
+}
+
+.gamma-gallery {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	position: relative;
+}
+
+/* http://nicolasgallagher.com/micro-clearfix-hack/ */
+.gamma-gallery:before,
+.gamma-gallery:after {
+    content: " ";
+    display: table;
+}
+
+.gamma-gallery:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+.gamma-gallery {
+    *zoom: 1;
+}
+ */
+
+.gamma-gallery li {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	float: left;
+	padding: 4px;
+}
+
+.gamma-gallery li img {
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	display: block;
+}
+
+.gamma-description {
+	background: #fff;
+	background: rgba(255, 255, 255, 0.6);
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	bottom: 20px;
+	right: 20px;
+	text-align: center;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	-webkit-transition: opacity 0.4s ease-in-out;
+	-moz-transition: opacity 0.4s ease-in-out;
+	-ms-transition: opacity 0.4s ease-in-out;
+	-o-transition: opacity 0.4s ease-in-out;
+	transition: opacity 0.4s ease-in-out;
+}
+
+.no-touch .gamma-gallery li:hover .gamma-description {
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter: alpha(opacity=80);
+	opacity: 1;
+}
+ 
+.gamma-description:before {
+	content: '';
+	height: 100%;
+}
+
+.gamma-description:before,
+.gamma-description h3 {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.gamma-description h3 {
+	width: 100%;
+	padding: 0 20px;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 16px;
+	letter-spacing: 2px;
+}
+
+.gamma-buttons {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 10001;
+}
+
+.gamma-buttons button {
+	float: left;
+	background: #333;
+	color: #fff;
+	display: block;
+	width: 30px;
+	height: 30px;
+	font-size: 14px;
+	margin-left: 5px;
+	cursor: pointer;
+	border: none;
+	outline: none;
+}
+
+.gamma-buttons button:before,
+.gamma-nav span:before {
+	font-family: 'entypo-selected';
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	display: block;
+	text-align: center;
+	opacity: 0.7;
+	outline: none;
+}
+
+.no-touch .gamma-buttons button:hover {
+	background: #666;
+}
+
+button.gamma-btn-close:before {
+	content: '\2715';
+}
+
+button.gamma-btn-ssplay:before {
+	content: '\25b6';
+}
+
+button.gamma-btn-sspause:before {
+	content: '\2389';
+}
+
+.gamma-single-view {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;	
+	z-index: 10000;
+	text-align: center;
+	display:none;
+}
+
+.gamma-overlay {
+	background: #000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	display: none;
+	z-index: 9999;
+}
+
+.gamma-single-view img {
+	position: absolute;
+	cursor: pointer;
+}
+
+.gamma-description-wrapper {
+	background: rgba(0,0,0,0.7);
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 10;
+	padding: 5px 0;
+}
+
+.gamma-single-view .gamma-description {
+	background: transparent;
+	position: relative;
+	bottom: auto;
+	left: auto;
+	right: auto;
+	top: auto;
+}
+
+.gamma-single-view .gamma-description h3 {
+	font-size: 15px;
+	padding: 5px 0;
+	color: #fff;
+}
+
+.gamma-nav span {
+	position: absolute;
+	display: block;
+	width: 20px;
+	height: 38px;
+	top: 50%;
+	margin-top: -19px;
+	left: 20px;
+	cursor: pointer;
+	text-align: center;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.gamma-nav span.gamma-next {
+	left: auto;
+	right: 20px;
+}
+
+.gamma-nav span:before {
+	color: #fff;
+	opacity: 0.7;
+	font-size: 40px;
+}
+
+.gamma-nav span:hover:before {
+	opacity: 1;
+}
+
+.gamma-nav span:before {
+	display: block;
+	margin: 0;
+	width: auto;
+}
+
+.gamma-nav span.gamma-prev:before {
+	content: '\e75d';
+}
+
+.gamma-nav span.gamma-next:before {
+	content: '\e75e';
+}
+
+.gamma-img-fly {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99999;
+}
+
+/* Loaders */
+
+.gamma-loading {
+	background: transparent url(../imagem/loader_light.gif) no-repeat center center;
+}
+
+.gamma-single-view.gamma-loading {
+	background: transparent url(../imagem/loader_dark.gif) no-repeat center center;
+}
+
+
+/* Make some things unselectable. Remove where selection is needed: */
+
+.gamma-container img,
+.gamma-nav span,
+.gamma-buttons button,
+.gamma-description-wrapper,
+.gamma-description,
+.gamma-description h3 {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+@media screen and (max-width: 750px) {
+
+	.gamma-description {
+		top: 10px;
+		left: 10px;
+		bottom: 10px;
+		right: 10px;
+	}
+
+	.gamma-description h3 {
+		font-size: 14px;
+		padding: 0 5px;
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+
+	.gamma-buttons {
+		float: left;
+		clear: both;
+	}
+
+}
+
+/*Hístoria*/
+
+div.noticias_historia{
+	
+	padding-bottom: 20px;
+}
+
+div.noticias_historia div.apresentacao{
+	text-align: center;
+	margin-top: 25px;
+}
+
+div.apresentacao h2{
+	margin: 10px;
+}
+
+div.historia{
+	text-align: center;
+	margin: 35px;
+}
+div.historia h3{
+	margin: 20px;
+}
+
+div.historia p{max-width: 900px;padding: 0 1%; margin: 0 auto;}
+
+section.principais_titulos{
+	background-color: whitesmoke;
+	background-size: 100% 100%;
+	height: 700px;
+	padding-bottom: 20px;
+}
+
+section.principais_titulos h4{
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+
+div.titulos{
+	max-width: 1000px;padding: 0 1%; margin: 0 auto;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+div.titulos p{
+	padding-top: 20px;
+	float: left;
+}
+
+div.titulos img{
+	margin-right: 50px;
+	float: right;
+	width: 500px;
+	height: 600px;
+	margin: 3px;
+}
